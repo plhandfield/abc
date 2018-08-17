@@ -1,0 +1,37 @@
+color=red
+controls=general(forward=Keys(Key=w, ALT=true),(Key=t),())
+
+controls=.*general.*forward=Keys\(Key=([A-Z]*)\,?\s*([a-z]*)=?[a-z]*\)
+controls=general(forward=Keys(Key=w, ALT=true),(Key=t),())
+
+controls=.*general.*forward=Keys\(Key=?([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)\,\(Key=([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)
+controls=.*general.*forward=Keys\((Key=)?([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)\,\(Key=([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)
+controls=.*general.*forward=Keys\((Key=)?([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)\,\((Key=)?([a-z 1-9\._]*)\,?\s*([a-z]*)=?[a-z]*\)
+
+
+ActionName="ToggleShowObseverTagWeapon",Keys=\(\(Key=([a-z0-9._]*)\),\((Key=)?([a-z0-9._]*)\)
+ActionName="ToggleShowObseverTagWeapon",Keys=\(\((?:Key=)?([a-z0-9._]*)\),\((?:Key=)?([a-z0-9._]*)\)
+
+(?:.*)ActionName="ObserverSetCharacter0",Keys=\(\((?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\),?\((?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)(?:.*)
+
+#
+#    NB NE PAS OUBLIER : CASE SENSITIVE ET IGNORE WHITESPACE
+#
+# Pour les keybindings
+(?:.*)ActionName="XXXXXXXXXX",Keys=\(\((?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\),?\((?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)(?:.*)
+
+# Pour les keybindings V2 accepte "Keys=(())"
+ActionName="UseMolotov",Keys=\(\(?(?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)?,?\(?(?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)?(?:.*)
+
+# MouseSensitiveList
+MouseSensitiveName="Normal",MouseSensitivity=([0-9\.]*)(?:.*)
+
+# 
+bInvertMouse=([a-z]*)(?:.*)
+
+# AxisKeyList
+AxisName="ParachuteVehicleMoveForward",Scale=([0-9\.]*),Keys=\(\(?(?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)?,?\(?(?:Key=)?([a-z0-9._]*),?([a-z0-9]*)=?(?:[a-z1-9]*)\)?(?:.*)
+
+
+
+
